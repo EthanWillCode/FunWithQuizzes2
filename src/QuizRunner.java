@@ -18,14 +18,14 @@ public class QuizRunner {
         } else {
             System.out.println("Wrong\n");
         }
-//        input.close();
+//
 
         Scanner input2 = new Scanner(System.in);
         System.out.println(q1.question);
         System.out.println(q1.potentialAnswers);
-        String userAnswer = input.next();
-
-        if (userAnswer == "a") {
+        String userAnswer = input2.next();
+        System.out.println(userAnswer);
+        if (userAnswer.equals("a") || userAnswer.equals("A")){
             System.out.println("Correct");
             correct++;
         } else {
